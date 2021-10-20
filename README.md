@@ -1,46 +1,49 @@
-# Aston Animal Sanctury
+# 🐼 Aston Animal Sanctury
 ![Animal Sanctury Logo](/assets/images/project_logo.png)
 
-<div style="text-align:center; font-size: 30px;"><span>For</h2></span></div>
 
-![Aston Logo](/assets/images/aston_logo.png)
+Aston animal Sanctuary is a MERN stack based adoption management system, with the ability to
 
-# About the project
+- 🦄 Add animals along with their details, and set them up for adoptions
+- 👮‍♀️ Have users sign up for the app
+- 🐼 Users can raise adoption request
+- ✉️ Send out email notifications to users on adoption status change.
+- 👀 Discover, search for, or filter animals setup for adoption
+- 😃 Approve/Decline queued adoption requests
 
-This project is part of the Aston Animal Sanctury backend, made forby Rajwinder Singh of Aston University. Copying this project is strictly prohibited, and this is private property. Public only for marking purposes by the professor.
+...And a lot more features to explore. Run your own instance and see it for yourself.
 
-# Project Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8dafc65f-fe23-4b9a-83d4-c74cfdf0eb40/deploy-status)](https://app.netlify.com/sites/aston-animal/deploys) 
+# Tech-Stack 📱
 
-Above is the badge linking to the app's deployment. See the status here.
+This application uses:
+- 🚅 **Express Js** for handling http traffic.
+- 🍀 NodeJS as the runtime
+- 💿 MongoDB as the database, and 
+- 🐑 Mongoose as the ORM
+- 📤 Node-mailer as the email notification client
 
-# Replicating the project
+Created with ❤️ and 🐼 in Delhi, India
 
-To replicate the repo, follow the given steps:
+# Setting up the application 🔌
 
-## Clone the Repo
+To run your own instance, follow the given steps:
+
+## Clone the repo
 
 To clone the repo, use
 ```bash
-git clone https://github.com/rajwinderkaurr/aston-animal-backend.git
-```
-## Setup Environment
+git clone https://github.com/Just-Moh-it/Aston-Backend
 
-Change to the directory:
-```
-cd aston-animal-backend
+cd Aston-Backend
 ```
 
-## Adding `.env` file
+## Setup MongoDB
 
-Add the `.env` file in base directory with configurations like this
-```
-PORT = 4030                         # Port hte app will be running on
-MONGO_URL = <your MongoDB URI>      # Mongo Db url from atlas or server
+If you haven't already installed mongodb, get it [here](https://docs.mongodb.com/manual/installation/). Then copy the connection string and paste it according to the next step.
 
-ACCESS_TOKEN_SECRET = <secret>      # Randomly generated ~30 length string
-REFRESH_TOKEN_SECRET = <secret>     # Randomly generated ~70 length string
-```
+## Adding an environment file
+
+Rename the `.env.example` file to `.env` in the base of the folder and change the values accordingly.
 
 ## Starting the server
 
@@ -63,6 +66,14 @@ If you get a JSON file presenting:
 { "messages": "Congrats! Server started. Use the front end to query..." }
 ```
 
-# That's it!
+# Contributing 😃
 
-We've successfully started the NodeJS server. Now, we only have to get the frontend from my repositories, and configure it to run with the backend
+There's a lot that could be imroved in this application. If you want to contribute, visit [CONTRIBUTING.md](/CONTRIBUTING.md)
+
+# License 👩‍⚖️
+
+This project is released under the MIT license. For more info, visit [LICENSE.md](/LICENSE.md)
+
+# That's it! 🎉
+
+If You've successfully started the NodeJS server, the next step is to get the frontend up, and configure it to run with the backend. [Visit the frontend here](https://github.com/Just-Moh-it/Aston-Frontend).
