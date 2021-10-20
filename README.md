@@ -1,5 +1,5 @@
-# 🐼 Aston Animal Sanctury
-![Animal Sanctury Logo](/assets/images/project_logo.png)
+# 🐼 Aston Animal Sanctuary
+![Animal Sanctuary Logo](/assets/images/project_logo.png)
 
 
 Aston animal Sanctuary is a MERN stack based adoption management system, with the ability to
