@@ -1,6 +1,6 @@
 # 🐼 Aston Animal Sanctuary
-![Animal Sanctuary Logo](/assets/images/project_logo.png)
 
+![Animal Sanctuary Logo](/assets/images/project_logo.png)
 
 Aston animal Sanctuary is a MERN stack based adoption management system, with the ability to
 
@@ -16,9 +16,10 @@ Aston animal Sanctuary is a MERN stack based adoption management system, with th
 # Tech-Stack 📱
 
 This application uses:
+
 - 🚅 **Express Js** for handling http traffic.
 - 🍀 NodeJS as the runtime
-- 💿 MongoDB as the database, and 
+- 💿 MongoDB as the database, and
 - 🐑 Mongoose as the ORM
 - 📤 Node-mailer as the email notification client
 
@@ -28,13 +29,16 @@ Created with ❤️ and 🐼 in Delhi, India
 
 To run your own instance, follow the given steps:
 
-## Clone the repo
+## Setup the Environment
 
-To clone the repo, use
 ```bash
+# Clone and Change Directory
 git clone https://github.com/Just-Moh-it/Aston-Backend
 
 cd Aston-Backend
+
+# Install the dependencies
+npm install
 ```
 
 ## Setup MongoDB
@@ -48,23 +52,34 @@ Rename the `.env.example` file to `.env` in the base of the folder and change th
 ## Starting the server
 
 To run the backend server, type in the terminal
+
 ```bash
-node app.js
+npm start
 ```
 
-## Testing the backend
+## Starting the backend
 
-To test if the backend is correctly working, first run the app. Then a message in the terminal window saying 
-```Server started at port <PORT>```
-will appear. Note the port number, and type in the browser window:
+Once all the above steps occur without any error, start the application using
 
+```bash
+npm start
 ```
-http://localhost:<PORT>/
+
+You should see a browser window pop up with the following url
+
+```txt
+https://localhost:3000
 ```
-If you get a JSON file presenting:
-```
-{ "messages": "Congrats! Server started. Use the front end to query..." }
-```
+
+This indicates the frontend started successfully. Now you need to create an admin user
+
+## Signup the admin account
+
+On the browser instance, click on the `Login | Register` link at the top, then enter the details you want the admin account to have, and press `Register`.
+
+Now, you need to open the mongodb database (using the CLI or MongoDb Compass, or Atlas itself if you're hosting the db on MongDb Atlas), and open the `users` collection. There, you can search for the admin account by the its mail address.
+
+After locating the document in the collection, change the `role` value from `0` to `1` to handle the user as admin.
 
 # Contributing 😃
 
